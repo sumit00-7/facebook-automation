@@ -9,10 +9,10 @@ import org.openqa.selenium.WebElement;
 public class LoginPage extends BasePage {
 
     // Locators
-    @AndroidFindBy(accessibility = "Mobile number or email address")
+    @AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(0)")
     private WebElement emailField;
 
-    @AndroidFindBy(accessibility = "Password")
+    @AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(1)")
     private WebElement passwordField;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Log in\")")

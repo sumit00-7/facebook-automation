@@ -6,9 +6,6 @@
       <class name="tests.LoginTest">
         <methods>
           <include name="testValidLogin"/>
-          <include name="testEmptyFields"/>
-          <include name="testIncorrectPassword"/>
-          <include name="testInvalidEmailFormat"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

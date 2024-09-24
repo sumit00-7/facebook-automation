@@ -8,14 +8,14 @@ import org.testng.annotations.Test;
 public class LoginTest extends BaseTest {
 
     @Test
-    public void testValidLogin() {
+    public void testValidLogin() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
 //        HomePage homePage = new HomePage(driver);
 
-        loginPage.enterEmail("valid_email@example.com");
-        loginPage.enterPassword("valid_password");
+        loginPage.enterEmail("bhatt2002snehil@gmail.com");
+        loginPage.enterPassword("Test@123");
         loginPage.clickLoginButton();
-
+        Thread.sleep(5000);
 //        assertTrue(homePage.isHomeScreenDisplayed());
     }
 
